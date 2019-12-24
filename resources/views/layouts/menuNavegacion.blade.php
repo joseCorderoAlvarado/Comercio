@@ -3,7 +3,7 @@
      <a href="#" class="brand-logo">Logo</a>
      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
      <ul id="nav-mobile" class="right hide-on-med-and-down">
-       <li><a href="#">Crea tu cuenta</a></li>
+       <li><a href="{{ url('login')}}">Crea tu cuenta</a></li>
        <li><a href="badges.html">Ingresa</a></li>
        <li><a href="collapsible.html">Mis compras</a></li>
        <li><a href="collapsible.html"><i class=" small material-icons">shopping_cart</i></a></li>

@@ -10,9 +10,8 @@
 </script>
 <div class="container">
 <div class="row">
-
   <!-- Structure card -->
-  <div class="col s12 m4 l4">
+  <div class="col s12 m5 l5 xl4">
             <div class="card animate fadeLeft">
               <div class="card-content">
                 <p>Nombre del producto</p>
@@ -25,13 +24,12 @@
               </div>
             </div>
    <!--Fin de Structure card -->
-
             <!-- Modal Structure -->
             <div id="modalproductos" class="modal" tabindex="0" style="z-index: 1003; display: none; opacity: 0; top: 4%; transform: scaleX(0.8) scaleY(0.8);">
               <div class="modal-content">
                 <a class="modal-close right"><i class="material-icons">close</i></a>
                 <div class="row" id="product-five">
-                  <div class="col s12 m6  l6">
+                  <div class="col s12 m6  l6 xl6">
                     <img  class="materialboxed" src="images/banner4.jpg" alt="" width="200px" height="150px">
                     <p></p>
                     <img  class="materialboxed" src="images/banner4.jpg" alt="" width="200px" height="150px">
@@ -42,7 +40,7 @@
                        });
                     </script>
                   </div>
-                  <div class="col l6 m6 s12">
+                  <div class="col s12 xl6 l6 m6 ">
                     <p>Nombre del producto</p>
                     <h5>Modelo o especificacion corta del producto</h5>
                       Cantidad: <div class="input-field inline "> <input type="number" min="1" max="10" step="1" value="1" ></div>
@@ -56,6 +54,7 @@
                     </ul>
                     <h5>Precio: $1,300.00</h5>
                     <a class="waves-effect waves-light btn light-blue darken-4 mt-2 mr-2">Añadir al carrito</a>
+                    <p></p>
                     <a class="waves-effect waves-light btn light-blue darken-4 mt-2">Comprar Ahora</a>
                   </div>
                 </div>
@@ -63,6 +62,23 @@
             </div>
             <!--Fin de Structure Modal -->
   </div>
+</div>
+<div class="row">
+<div class="col s0 m3 l3 xl4 ">
+</div>
+<div class="col s12 m6 l6 xl4 ">
+<ul class="pagination">
+    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+    <li class="active light-blue darken-4"><a href="#!" class="white-text">1</a></li>
+    <li class="waves-effect light-blue darken-4"><a href="#!" class="white-text">2</a></li>
+    <li class="waves-effect light-blue darken-4"><a href="#!" class="white-text">3</a></li>
+    <li class="waves-effect light-blue darken-4"><a href="#!" class="white-text">4</a></li>
+    <li class="waves-effect light-blue darken-4"><a href="#!" class="white-text">5</a></li>
+    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+  </ul>
+</div>
+<div class="col s0 m3 l3 xl4">
+</div>
 </div>
 </div>
 @include('layouts.footer')
