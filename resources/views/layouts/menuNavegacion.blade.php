@@ -5,14 +5,23 @@
      <ul id="nav-mobile" class="right hide-on-med-and-down">
        <li><a href="{{ url('registro')}}">Crea tu cuenta</a></li>
        <li><a href="{{ url('login')}}">Ingresa</a></li>
-       <li><a  id="b6"  onclick="alertaCompras()" >Mis compras</a></li>
-       <li><a href="collapsible.html"><i class=" small material-icons">shopping_cart</i></a></li>
+       <li><a  onclick="alertaCompras()" >Mis compras</a></li>
+       <li><a onclick="alertaCarrito()"><i class="small material-icons">shopping_cart</i></a></li>
      </ul>
    </div>
    <script>
    function alertaCompras() {
-    M.toast({html: 'No se puede ver tus compras sino estas registrado', 
-    classes: 'rounded',
+    M.toast({html: 'No se pueden ver tus compras sino estas registrado', 
+    classes: 'rounded grey lighten-3 black-text',
+    displayLength: 1500,
+    completeCallback: function(){
+      window.location.href = "/Comercio/public/login";
+      }
+    })
+   }
+   function alertaCarrito() {
+    M.toast({html: 'No puedes ingresar a tu carrito sino estas registrado', 
+    classes: 'rounded grey lighten-3 black-text',
     displayLength: 1500,
     completeCallback: function(){
       window.location.href = "/Comercio/public/login";

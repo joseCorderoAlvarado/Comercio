@@ -53,14 +53,34 @@
                       <li class="list-item-bullet">Color:Unico color cafe claro </li>
                     </ul>
                     <h5>Precio: $1,300.00</h5>
-                    <a class="waves-effect waves-light btn light-blue darken-4 mt-2 mr-2">Añadir al carrito</a>
+                    <a class="waves-effect waves-light btn light-blue darken-4 mt-2 mr-2" onclick="alertaAnadirCarrito()">Añadir al carrito</a>
                     <p></p>
-                    <a class="waves-effect waves-light btn light-blue darken-4 mt-2">Comprar Ahora</a>
+                    <a class="waves-effect waves-light btn light-blue darken-4 mt-2" onclick="alertaComprarAhora()">Comprar Ahora</a>
                   </div>
                 </div>
               </div>
             </div>
             <!--Fin de Structure Modal -->
+  <script>
+   function alertaAnadirCarrito() {
+    M.toast({html: 'No se pueden añadir productos a tu compra sino estas registrado', 
+    classes: 'rounded grey lighten-3 black-text',
+    displayLength: 1500,
+    completeCallback: function(){
+      window.location.href = "/Comercio/public/login";
+      }
+    })
+   }
+   function alertaComprarAhora(){
+    M.toast({html: 'No puedes realizar compras sino estas registrado', 
+    classes: 'rounded grey lighten-3 black-text',
+    displayLength: 1500,
+    completeCallback: function(){
+      window.location.href = "/Comercio/public/login";
+      }
+    })
+   }
+</script>
   </div>
 </div>
 <div class="row">
