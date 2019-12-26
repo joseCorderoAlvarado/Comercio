@@ -1,14 +1,25 @@
 <nav class="nav-extended light-blue darken-4">
    <div class="nav-wrapper">
-     <a href="#!" class="brand-logo"><img src="images/iravi.png" alt="" width="50px" heigth="50px">Artesanias iravi</a>
+     <a  href="{{ url('/')}}" class="brand-logo"><img src="images/iravi.png" alt="" width="50px" heigth="50px">Artesanias iravi</a>
      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
      <ul id="nav-mobile" class="right hide-on-med-and-down">
        <li><a href="{{ url('registro')}}">Crea tu cuenta</a></li>
        <li><a href="{{ url('login')}}">Ingresa</a></li>
-       <li><a href="collapsible.html">Mis compras</a></li>
+       <li><a  id="b6"  onclick="alertaCompras()" >Mis compras</a></li>
        <li><a href="collapsible.html"><i class=" small material-icons">shopping_cart</i></a></li>
      </ul>
    </div>
+   <script>
+   function alertaCompras() {
+    M.toast({html: 'No se puede ver tus compras sino estas registrado', 
+    classes: 'rounded',
+    displayLength: 1500,
+    completeCallback: function(){
+      window.location.href = "/Comercio/public/login";
+      }
+    })
+   }
+</script>
    <div class="nav-content">
      <ul class="tabs tabs-transparent">
        <li class="tab"><a href="#">Accesorios</a></li>
