@@ -1,10 +1,10 @@
 <nav class="nav-extended light-blue darken-4">
    <div class="nav-wrapper">
-     <a href="#" class="brand-logo">Logo</a>
+     <a href="#!" class="brand-logo"><img src="images/iravi.png" alt="" width="50px" heigth="50px">Artesanias iravi</a>
      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
      <ul id="nav-mobile" class="right hide-on-med-and-down">
-       <li><a href="{{ url('login')}}">Crea tu cuenta</a></li>
-       <li><a href="badges.html">Ingresa</a></li>
+       <li><a href="{{ url('registro')}}">Crea tu cuenta</a></li>
+       <li><a href="{{ url('login')}}">Ingresa</a></li>
        <li><a href="collapsible.html">Mis compras</a></li>
        <li><a href="collapsible.html"><i class=" small material-icons">shopping_cart</i></a></li>
      </ul>

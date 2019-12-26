@@ -12,6 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('hola');
+    return view('index');
 });
-Route::view('/login', 'login');
+Route::view('/registro', 'Registro');
+Route::view('/login', 'Login');

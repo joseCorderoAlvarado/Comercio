@@ -1,50 +1,47 @@
 @include('layouts.plantilla')
 @include('layouts.menunavegacion')
-<div class="container-fluid">
-<div id="register-page" class="row">
-<div class="col s0 m3 l3 xl3"></div>
-<div class="col s12 m6 l6 xl6">
-	<div class="col s12 z-depth-6 card-panel">
-	<h4 align="center"> Completa tus datos</h4>
-		<form class="register-form">        
-		<div class="row margin">
-              <div class="input-field col s12 m6 l6 xl5">
-                <i class="material-icons prefix light-blue-text text-darken-4">account_box</i>
-                <input id="icon_prefix1" type="text" class="validate light-blue-text text-darken-4">
-                <label for="icon_prefix1" class="light-blue-text text-darken-4">Nombre</label>
-              </div>
-			 
-              <div class="input-field col m6 s12 m6 l6 xl7">
-			 <i class=" hide-on-med-and-up material-icons prefix light-blue-text text-darken-4">account_box</i>
-                <input id="icon_prefix2" type="text" class="validate light-blue-text text-darken-4">
-                <label for="icon_prefix2" class="light-blue-text text-darken-4">Apellidos</label>
-              </div>
-		</div>
-			<div class="row margin">
-				<div class="input-field col s12">
-					<i class="material-icons prefix light-blue-text text-darken-4">email</i>
-					<input id="user_email" type="email" class="validate  light-blue-text text-darken-4">
-					<label for="user_email" class="center-align  light-blue-text text-darken-4">Correo eléctronico</label>
-				</div>
-			</div>
-			<div class="row margin">
-				<div class="input-field col s12">
-					<i class="material-icons prefix light-blue-text text-darken-4">lock</i>
-					<input id="user_passw" type="password" class="validate  light-blue-text text-darken-4">
-					<label for="user_passw" class=" light-blue-text text-darken-4">Contraseña</label>
-				</div>
-			</div>
-			<div class="row margin center">
-				<div class="input-field col s12 margin center medium-small sign-up">
-					<a href="#" class=" btn waves-effect waves-light col s12 light-blue darken-4">Crear cuenta</a>
-				</div>
-				<div class="input-field col s12">
-					<p class="margin center medium-small sign-up">¿Ya tienes una cuenta? <a href="#">Inicia sesión</a></p>
-				</div>
-			</div>
-		</form>
-</div>
-</div>
-<div class="col s0 m3 l3 xl3"></div>
-</div>
+<div id="login-page" class="row">
+   <div class="col s0 m2 l2 xl4"></div>
+    <div class="col s12 m8 l8 xl4 z-depth-4 card-panel">
+	<h5 align="center">!Hola¡ para seguir, ingresa tu Correo eléctronico y contraseña</h5>
+      <form class="login-form">
+        <div class="row margin">
+          <div class="input-field col s12">
+            <i class="material-icons prefix light-blue-text text-darken-4">account_box</i>
+            <input id="username" type="text">
+            <label for="username" class=" light-blue-text text-darken-4 center-align" ><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nombre de usuario</font></font></label>
+          </div>
+        </div>
+        <div class="row margin">
+          <div class="input-field col s12">
+            <i class="material-icons prefix light-blue-text text-darken-4">lock</i>
+            <input id="password" type="password">
+            <label for="password" class="light-blue-text text-darken-4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Contraseña</font></font></label>
+          </div>
+        </div>
+        <div class="row">          
+          <div class="input-field col s12 m12 l12  login-text">
+		<label>
+		  <input type="checkbox" id="remember-me" /> 
+          <span>Recuerdame</span>
+      </label>  
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <a href="index.html" class="btn waves-effect waves-light  light-blue darken-4 col s12"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Iniciar sesión</font></font></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6 m6 l6">
+            <p class="margin medium-small"><a href="{{ url('registro')}}" class="light-blue-text text-darken-4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¡Regístrate ahora!</font></font></a></p>
+          </div>
+          <div class="input-field col s6 m6 l6">
+              <p class="margin right-align medium-small"><a href="page-forgot-password.html" class="light-blue-text text-darken-4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¿Se te olvidó tu contraseña?</font></font></a></p>
+          </div>          
+        </div>
+      </form>
+    </div>
+	<div class="col s0 m2 l2 xl4"></div>
+  </div>
 @include('layouts.footer')
